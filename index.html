@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Floor Plan Generator — Free Room Layout & Interior Design Tool</title>
+  <meta name="description" content="Create professional floor plans and room layouts with AI. Generate 2D interior design floor plans for free. No signup needed.">
+  <meta name="keywords" content="AI floor plan generator, AI room layout, AI interior design, free floor plan tool, AI architecture generator">
+  <link rel="canonical" href="https://aifloorplangen.com/">
+  <meta property="og:title" content="AI Floor Plan Generator — Free Room Layout & Interior Design Tool">
+  <meta property="og:description" content="Create professional floor plans and room layouts with AI. Generate 2D interior design floor plans for free.">
+  <meta property="og:url" content="https://aifloorplangen.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://aifloorplangen.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Floor Plan Generator — Free Room Layout & Interior Design Tool">
+  <meta name="twitter:description" content="Create professional floor plans and room layouts with AI. No signup needed.">
+  <meta name="twitter:image" content="https://aifloorplangen.com/og-image.jpg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Floor Plan Generator",
+    "url": "https://aifloorplangen.com/",
+    "description": "Create professional floor plans and room layouts with AI. Generate 2D interior design floor plans for free.",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the AI Floor Plan Generator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI Floor Plan Generator is a free online tool that uses artificial intelligence to create professional floor plans and room layouts. You can generate 2D interior design floor plans for various room types including living rooms, bedrooms, kitchens, and offices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the AI Floor Plan Generator free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our AI Floor Plan Generator is completely free to use. There is no signup required, no credit card needed, and no usage limits. You can generate as many floor plans as you want."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What room types are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our generator supports a wide range of room types including living rooms, bedrooms, kitchens, bathrooms, offices, studios, and more. You can also enter custom descriptions for any room layout you need."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I download the generated floor plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Once your AI floor plan is generated, you can download it directly to your device in high quality. All floor plans are free for personal use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account to use the AI Floor Plan Generator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No account or signup is required. Simply visit the website, enter your room description, select a room type, and generate your floor plan instantly."
+        }
+      }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="shared/layout.css">
+  <link rel="stylesheet" href="shared/components.css">
+  <style>
+    .generator-area { background: linear-gradient(135deg, var(--primary-light) 0%, var(--bg-secondary) 100%); }
+    .image-preview { min-height: 320px; }
+    .style-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23475569' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.75rem center; padding-right: 2.5rem; appearance: none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">AI Floor Plan Generator</a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Generator Section -->
+    <section class="generator-area py-16">
+      <div class="container">
+        <div class="text-center mb-10">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">AI Floor Plan Generator</h1>
+          <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Create professional floor plans and room layouts instantly. Free, no signup required.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-8">
+          <div class="mb-5">
+            <label for="room-desc" class="block text-sm font-semibold mb-2">Describe your room</label>
+            <input type="text" id="room-desc" class="form-input w-full" placeholder="e.g., modern living room with large windows" value="modern living room, open plan, large windows">
+          </div>
+
+          <div class="mb-5">
+            <label for="room-type" class="block text-sm font-semibold mb-2">Room Type</label>
+            <select id="room-type" class="form-input w-full style-select">
+              <option value="living-room" selected>Living Room</option>
+              <option value="bedroom">Bedroom</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="bathroom">Bathroom</option>
+              <option value="office">Office</option>
+              <option value="studio">Studio</option>
+              <option value="dining-room">Dining Room</option>
+              <option value="custom">Custom (use description only)</option>
+            </select>
+          </div>
+
+          <button id="generate-btn" class="btn btn-primary w-full text-lg py-3">Generate Floor Plan</button>
+
+          <div id="result-area" class="mt-8 hidden">
+            <div class="image-preview rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center overflow-hidden">
+              <img id="generated-image" src="" alt="Generated AI floor plan" class="max-w-full h-auto hidden">
+              <div id="loading" class="py-20 text-[var(--text-secondary)]">Generating your floor plan... <span class="inline-block animate-spin ml-2">⟳</span></div>
+            </div>
+            <div class="mt-4 flex gap-3 justify-center">
+              <a id="download-btn" href="#" download="ai-floor-plan.png" class="btn btn-secondary">Download Image</a>
+              <button id="regenerate-btn" class="btn btn-primary">Generate Another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Content -->
+    <section class="py-16 bg-white">
+      <div class="container max-w-4xl">
+        <h2 class="text-3xl font-bold mb-6">What is AI Floor Plan Generator?</h2>
+        <p class="mb-4 text-[var(--text-secondary)] leading-relaxed">AI Floor Plan Generator is a powerful, free online tool that lets you create professional floor plans and room layouts using artificial intelligence. Whether you are an interior designer, architect, real estate agent, or homeowner planning a renovation, our tool generates high-quality 2D floor plans in seconds.</p>
+        <p class="mb-4 text-[var(--text-secondary)] leading-relaxed">The tool supports a wide range of room types including living rooms, bedrooms, kitchens, bathrooms, offices, studios, and dining rooms. You can also enter fully custom descriptions to create unique floor plans that match your exact vision. All generated floor plans are free to download and use for personal projects.</p>
+        <p class="mb-4 text-[var(--text-secondary)] leading-relaxed">Using the AI Floor Plan Generator is incredibly simple. Enter a description of the room, select your preferred room type from the dropdown menu, and click the generate button. Within seconds, Pollinations AI will create a unique floor plan based on your input. There is no signup required, no API key needed, and no limits on how many floor plans you can create.</p>
+        <p class="text-[var(--text-secondary)] leading-relaxed">Best of all, the AI Floor Plan Generator runs entirely in your browser. Your descriptions are sent directly to Pollinations AI for image generation, and no personal data is stored on our servers. It is fast, private, and completely free. Try it now and see what amazing floor plans you can create!</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-[var(--bg-secondary)]">
+      <div class="container max-w-4xl">
+        <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <details class="bg-white rounded-lg shadow-sm p-5">
+            <summary class="font-semibold cursor-pointer">What is the AI Floor Plan Generator?</summary>
+            <p class="mt-3 text-[var(--text-secondary)]">AI Floor Plan Generator is a free online tool that uses artificial intelligence to create professional floor plans and room layouts. You can generate 2D interior design floor plans for various room types including living rooms, bedrooms, kitchens, and offices.</p>
+          </details>
+          <details class="bg-white rounded-lg shadow-sm p-5">
+            <summary class="font-semibold cursor-pointer">Is the AI Floor Plan Generator free to use?</summary>
+            <p class="mt-3 text-[var(--text-secondary)]">Yes, our AI Floor Plan Generator is completely free to use. There is no signup required, no credit card needed, and no usage limits. You can generate as many floor plans as you want.</p>
+          </details>
+          <details class="bg-white rounded-lg shadow-sm p-5">
+            <summary class="font-semibold cursor-pointer">What room types are supported?</summary>
+            <p class="mt-3 text-[var(--text-secondary)]">Our generator supports a wide range of room types including living rooms, bedrooms, kitchens, bathrooms, offices, studios, and dining rooms. You can also enter custom descriptions for any room layout you need.</p>
+          </details>
+          <details class="bg-white rounded-lg shadow-sm p-5">
+            <summary class="font-semibold cursor-pointer">Can I download the generated floor plans?</summary>
+            <p class="mt-3 text-[var(--text-secondary)]">Absolutely! Once your AI floor plan is generated, you can download it directly to your device in high quality. All floor plans are free for personal use.</p>
+          </details>
+          <details class="bg-white rounded-lg shadow-sm p-5">
+            <summary class="font-semibold cursor-pointer">Do I need an account to use the AI Floor Plan Generator?</summary>
+            <p class="mt-3 text-[var(--text-secondary)]">No account or signup is required. Simply visit the website, enter your room description, select a room type, and generate your floor plan instantly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 AI Floor Plan Generator. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const generateBtn = document.getElementById('generate-btn');
+      const regenerateBtn = document.getElementById('regenerate-btn');
+      const resultArea = document.getElementById('result-area');
+      const generatedImage = document.getElementById('generated-image');
+      const loading = document.getElementById('loading');
+      const downloadBtn = document.getElementById('download-btn');
+      const descInput = document.getElementById('room-desc');
+      const typeSelect = document.getElementById('room-type');
+
+      function generate() {
+        const desc = descInput.value.trim() || 'modern living room';
+        const type = typeSelect.value;
+        let prompt = desc;
+        if (type !== 'custom') {
+          prompt = desc + ', ' + type.replace('-', ' ') + ' floor plan, 2D top view, architectural drawing style, clean lines, labeled rooms, high quality';
+        } else {
+          prompt = desc + ', floor plan, 2D top view, architectural drawing style, clean lines, high quality';
+        }
+        const imageUrl = 'https://image.pollinations.ai/prompt/' + encodeURIComponent(prompt) + '?width=768&height=768&nologo=true&seed=' + Math.floor(Math.random() * 100000);
+
+        resultArea.classList.remove('hidden');
+        generatedImage.classList.add('hidden');
+        loading.classList.remove('hidden');
+        generatedImage.src = imageUrl;
+        generatedImage.onload = function() {
+          loading.classList.add('hidden');
+          generatedImage.classList.remove('hidden');
+          downloadBtn.href = imageUrl;
+        };
+        generatedImage.onerror = function() {
+          loading.textContent = 'Error generating floor plan. Please try again.';
+        };
+        resultArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      generateBtn.addEventListener('click', generate);
+      regenerateBtn.addEventListener('click', generate);
+    })();
+  </script>
+</body>
+</html>
